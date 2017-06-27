@@ -1,10 +1,8 @@
 $(document).ready(toDoWhenReady);
 
-$('.readmore').click(showMore);
-$('.readless').click(showLess);
-
 function toDoWhenReady() {
   $('.readmore').click(showMore);
+  $('.readless').click(showLess);
 }
 
 function showMore(event) {
@@ -12,11 +10,11 @@ function showMore(event) {
   $('#show-this-on-click').slideDown();
   $('.readmore').hide();
   $('.readless').show();
-  }
+}
 
-  function showLess(event) {
-    event.preventDefault();
-    $('#showThisOnClick').slideUp();
-    $('.readmore').show();
-    $('.readless').hide();
-  }
+function showLess(event) {
+  event.preventDefault();
+  $('#show-this-on-click').slideUp();
+  $('.readmore').show();
+  $('.readless').hide();
+}
